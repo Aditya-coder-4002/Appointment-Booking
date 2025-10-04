@@ -1,0 +1,93 @@
+.doctor-container {
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.doctor-card {
+    border: 1px solid #1976D2;
+    padding: 15px;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.doctor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.doctor-image {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    object-fit: cover;
+    border: 2px solid #1976D2;
+}
+
+.doctor-name {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #1976D2;
+}
+
+.doctor-specialization {
+    margin: 5px 0;
+    color: #555;
+    font-size: 15px;
+}
+
+.more-details-btn {
+    background: #0eab45;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.more-details-btn:hover {
+    background: #129e92;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.filter-buttons button {
+    margin: 65px 10px 10px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+.filter-buttons button:hover {
+    background: linear-gradient(135deg, #0056b3, #004080);
+    transform: scale(1.05);
+    box-shadow: 3px 6px 12px rgba(0, 91, 187, 0.4);
+}
+
+.filter-buttons button:active {
+    transform: scale(0.98);
+    box-shadow: 1px 2px 8px rgba(0, 123, 255, 0.2);
+}

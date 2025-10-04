@@ -1,0 +1,99 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('https://source.unsplash.com/1600x900/?nature') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+  }
+  
+ 
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(128, 128, 128, 0.3);  
+    backdrop-filter: blur(10px);         
+    color: white;
+    padding: 15px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    height: 60px;                       
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);  
+  }
+  
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color:rgb(199, 20, 20);
+    letter-spacing: 2px;
+    flex: 1;  
+  }
+  
+
+  .nav-links {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex: 2; 
+    gap: 90px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #00bcd4;
+  }
+  
+  .active {
+    color: #00bcd4;
+  }
+  
+  
+  .menu-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  
+    .nav-links-mobile {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background: rgba(0, 0, 0, 0.9);  
+      width: 100%;
+      text-align: center;
+      padding: 20px 0;
+    }
+  
+    .nav-links-mobile a {
+      margin: 10px 0;
+    }
+  }
+  
+
